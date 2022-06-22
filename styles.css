@@ -1,3 +1,6 @@
+
+
+
 .darkGrey {
     background-color: #1F2937;
 }
@@ -62,8 +65,9 @@
 .signUpButton {
     background-color: #3882F6;
     color: #F9FAF8;
-    border-radius: 25px;
+    border-radius: 15px;
     height: 30px;
+    width: 100px;
 }
 
 .secondMain h2 {
@@ -169,7 +173,7 @@
 
 .footText {
     color: #E5E7EB;
-    font-size: 12px;
+    font-size: 15px;
     text-align: center;
 }
 
@@ -181,15 +185,60 @@
 
 .fullBodyContainer {
     display: flex;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
 }
 
 .leftSideBar,
 .rightSideBar {
     flex: 1 1 auto;
     background-color: #E5E7EB;
-    width: 200px;
+    width: 100px;
 }
 
 .pageContainer {
     flex: 2 1 auto;
+}
+
+.callToAction {
+    background-color: #3882F6;
+    padding: 20px 30px;
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 15px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.actionContent,
+.actionbutton {
+    flex: 1 1 auto;
+}
+
+.actionContent {
+    color: #F9FAF8;
+    text-align: left;
+    padding-left: 40px;
+    box-sizing: border-box;
+}
+
+.bigAction {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.smallAction {
+    font-size: 20px;
+}
+
+.actionButton {
+    border:3px solid #F9FAF8;
+}
+
+.actionContainer {
+    padding: 80px 200px;
+    box-sizing: border-box;
 }
