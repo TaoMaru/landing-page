@@ -1,5 +1,14 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+* {
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
 
 .darkGrey {
     background-color: #1F2937;
@@ -65,9 +74,12 @@
 .signUpButton {
     background-color: #3882F6;
     color: #F9FAF8;
-    border-radius: 15px;
-    height: 30px;
+    border-radius: 10px;
+    height: 40px;
     width: 100px;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .secondMain h2 {
@@ -86,14 +98,14 @@
     font-size: 36px;
     font-weight: lighter;
     font-style: italic;
-    text-align: center;
+    text-align: left;
 }
 
 .quoteAuthor {
     text-align: right;
     margin-right: 75px;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .pageContainer {
@@ -117,20 +129,40 @@
 
 .infoContainer {
     height: auto;
+    padding-top: 30px;
 }
 
 .imagesList {
     display: flex;
-    justify-content: center;
     list-style-type: none;
-    
     padding: 20px;
-    width: 100%;
+    /*width: 100%;*/
     box-sizing: border-box;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0px;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.flexImageItem1 {
+    flex: 1 1 auto;
+}
+
+.flexImageItem2 {
+    flex: 1 1 auto;
+}
+
+.flexImageItem3 {
+    flex: 1 1 auto;
+}
+
+.flexImageItem4 {
+    flex: 1 1 auto;
 }
 
 .imagesList li {
-    flex: 1 1 auto;
+    /*flex: 1 1 auto;*/
     width: 150px;
     height: 200px;
     border-radius: 25px;
@@ -139,18 +171,20 @@
     padding: 0px;
 }
 
+
 .imagesList li img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border: 3px solid #3882F6;
     border-radius: 25px;
-    margin: auto;
+    margin: 0px;
 }
 
 .mainInfoContainer {
     display: flex;
-    padding: 40px;
-    gap: 20px;
+    padding: 60px;
+    padding-bottom: 80px;
+    gap: 120px;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
@@ -164,6 +198,10 @@
 
 .leftsideContent {
     padding-left: 30px;
+}
+
+.leftsideContent p {
+    color: #F9FAF8;
 }
 
 .rightsideContent img {
@@ -188,17 +226,19 @@
     height: 100%;
     width: 100%;
     margin: 0px;
+    box-sizing: border-box;
 }
 
 .leftSideBar,
 .rightSideBar {
     flex: 1 1 auto;
     background-color: #E5E7EB;
-    width: 100px;
+    width: 300px;
 }
 
 .pageContainer {
     flex: 2 1 auto;
+    
 }
 
 .callToAction {
@@ -239,6 +279,23 @@
 }
 
 .actionContainer {
-    padding: 80px 200px;
+    padding: 70px 200px;
     box-sizing: border-box;
+}
+
+.quoteContainer {
+    box-sizing: border-box;
+    width: auto;
+    height: 300px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.thirdMain {
+    padding: 50px 200px;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: -50px;
 }
